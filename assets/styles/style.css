@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --background-under: #040404; 
+    --background-highlight: #121212;
+    --background-elevated-base: #1f1f1f;
+    --background-elevated-highlight: #2a2a2a;
+    --spotify-destaque-verde: #1DB954;  
+    --spotify-card-cinza: #282828;   
+    --spotify-texto-branco: #FFFFFF;   
+    --spotify-texto-cinza: #B3B3B3;
+    --spotify-fonte-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--background-under);
+    color: var(--spotify-texto-branco);
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    grid-template-rows: 40px auto;
+    gap: 0.9rem 0.5rem;
+    grid-template-areas: 
+    "head head head"
+    "aside main .";
+}
+
+.menu {
+    grid-area: head;
+    background-color: var(--background-under);
+}
+
+.conteudo__principal {
+    grid-area: main;
+    background-color: var(--background-highlight);
+    border-radius: 8px;
+}
+
+.menu__lateral {
+    grid-area: aside;
+    background-color: var(--background-highlight);
+    border-radius: 8px;
+}
