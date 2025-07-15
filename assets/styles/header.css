@@ -1,68 +1,106 @@
-.menu__nav {
+.main-nav {
     display: flex;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
 }
 
-.menu__nav * {
+.search-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-logo {
+    margin-left: 1.2rem;
+}
+
+.nav-logo-link {
+    display: flex;
     align-items: center;
 }
 
-.menu__container__search {
-    gap: 1rem;
-}
-
-.menu__container__logo {
-    justify-content: flex-start;
-    gap: 8px;
-}
-
-.menu__container__logo-img {
-    height: 30px;
+.nav-logo-image {
+    height: 32px;
     width: auto;
 }
 
-.menu__search {
-    background-color: var(--background-highlight);
+.home-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
     height: 45px;
+    background-color: var(--background-elevated-base);
+    border-radius: 50%;
+    background-size:cover;
+    cursor: pointer;
+}
+
+.home-icon:hover {
+    background-color: var(--background-elevated-highlight);
+}
+
+.home-icon i {
+    font-size: 22px;
+    color: white;
+}
+
+.search-bar {
+    background-color: var(--background-elevated-base);
+    height: 45px;
+    width: 450px;
     border-radius: 90px;
     color: var(--spotify-texto-branco);
     border-style: hidden;
     text-indent: 20px;
 }
 
-.menu__search:hover {
+.search-bar:hover {
     background-color: var(--background-elevated-highlight);
+    border: #ffff solid 0.1px;
 }
 
-.menu__home-icon {
-    width: 45px;
-    height: 45px;
-    background-color: var(--background-highlight);
-    border-radius: 50%;
-    background-size:cover;
-    cursor: pointer;
-}
-
-.menu__home-icon:hover {
-    background-color: var(--background-elevated-highlight);
-}
-
-.menu__home-icon i {
-  font-size: 22px;
-  color: white;
-}
-
-.menu__container__links {
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
     gap: 0.5rem;
 }
 
-.menu__container__links-item {
+.nav-item {
     font-family: var(--spotify-fonte-jakarta);
     font-weight: bold;
     color: var(--spotify-texto-cinza);
 }
 
-.menu__container__links-item:hover {
+.nav-item:hover {
     color: var(--spotify-texto-branco);
+}
+
+.nav-divider {
+    background-color: #ffff;
+    height: 25px;
+    margin-inline: 16px;
+    width: 1px;
+}
+
+.account-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-item-login {
+    border-radius: 50px;
+    background-color: #ffff;
+    height: 45px;
+    width: 110px;
+    color: var(--background-elevated-base);
+    font-weight: 700;
+    font-family: var(--spotify-fonte-jakarta);
+    cursor: pointer;
+    text-align: center;
+    line-height: 45px;
 }

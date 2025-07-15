@@ -21,6 +21,7 @@ body {
     height: 100vh;
     background-color: var(--background-under);
     color: var(--spotify-texto-branco);
+    overflow: hidden;
     display: grid;
     grid-template-columns: 360px 1fr;
     grid-template-rows: 40px auto;
@@ -41,7 +42,7 @@ body {
     border-radius: 8px;
 }
 
-.menu__lateral {
+.sidebar {
     grid-area: aside;
     background-color: var(--background-highlight);
     border-radius: 8px;
