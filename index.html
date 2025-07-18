@@ -18,12 +18,15 @@
                     <img class="nav-logo-image" src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" alt="Spotify logo">
                 </a>
             </div>
-
-            <div class="search-container">
-                <a href="index.html" class="home-icon"> 
+            
+            <a href="index.html" class="home-icon"> 
                     <i class="fa-solid fa-house"></i>
-                </a>
-                <input type="search" class="search-bar" id="site-search" name="q" placeholder="Buscar musicas"/>
+            </a>
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" class="search-bar" id="site-search" name="q" placeholder="What do you want to play?"/>
+                <div class="search-divider"></div>
+                <i class="fa-regular fa-folder-open"></i>
             </div>
 
             <div class="nav-links">
@@ -40,11 +43,49 @@
         </nav>
     </header>
 
-    <main class="conteudo__principal">
+    <main class="main">
     </main>
 
     <aside class="sidebar">
-        <p contenteditable="true">teste</p>
+        <nav>
+            <div class="sidebar-container">
+                <div class="sidebar-library">
+                    <h2 class="sidebar-title">Your Library</h2>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="sidebar-library-scroll">
+                    <section class="sidebar-card">
+                        <div class="sidebar-card-title_container">
+                            <span class="sidebar-card-title">Create your first playlist</span>
+                            <span class="sidebar-card-text">It's easy, we'll help you</span>
+                        </div>
+                        <div class="sidebar-card-button_container">
+                            <button class="sidebar-card-button">
+                                <span class="sidebar-card-button_text">Create playlist</span>
+                            </button>
+                        </div>
+                    </section>
+
+                    <section class="sidebar-card">
+                        <div class="sidebar-card-title_container">
+                            <span class="sidebar-card-title">Create your first playlist</span>
+                            <span class="sidebar-card-text">It's easy, we'll help you</span>
+                        </div>
+                        <div class="sidebar-card-button_container">
+                            <button class="sidebar-card-button">
+                                <span class="sidebar-card-button_text">Create playlist</span>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="sidebar-footer">
+                    <ul class="sidebar-footer-list">
+                        <li class="sidebar-footer-item"><a href="#" class="sidebar-list-anchor">Legal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </aside>
 
     <footer></footer>

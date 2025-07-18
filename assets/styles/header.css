@@ -1,15 +1,23 @@
 .main-nav {
     display: flex;
-    gap: 2rem;
     align-items: center;
+    gap: 1rem;
     width: 100%;
+    margin-top: 0.6rem;
 }
 
 .search-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.5rem;
+    gap: 10px;
+    padding: 0 15px;
+    height: 45px;
+    width: 100%;
+    max-width: 550px;
+    background-color: var(--background-elevated-base);
+    border-radius: 90px;
+    box-sizing: border-box;
 }
 
 .nav-logo {
@@ -47,19 +55,39 @@
     color: white;
 }
 
-.search-bar {
-    background-color: var(--background-elevated-base);
-    height: 45px;
-    width: 450px;
-    border-radius: 90px;
-    color: var(--spotify-texto-branco);
-    border-style: hidden;
-    text-indent: 20px;
+.fa-magnifying-glass {
+    color: var(--spotify-texto-cinza);
+    font-size: x-large;
 }
 
-.search-bar:hover {
-    background-color: var(--background-elevated-highlight);
-    border: #ffff solid 0.1px;
+.fa-folder-open {
+    color: var(--spotify-texto-cinza);
+    left: 465px;
+    font-size: x-large;
+}
+
+.search-divider {
+    background-color: var(--spotify-texto-cinza);
+    height: 25px;
+    inset-inline-end: 50px;
+    width: 1px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    border-style: none;
+    color: var(--spotify-texto-branco);
+    background-color: transparent;
+    padding: 0px;
+    text-indent: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    outline: none;
+}
+
+.search-bar:focus {
+    border: transparent;
+    background-color: transparent;
 }
 
 .nav-links {
@@ -70,7 +98,6 @@
 }
 
 .nav-item {
-    font-family: var(--spotify-fonte-jakarta);
     font-weight: bold;
     color: var(--spotify-texto-cinza);
 }
@@ -99,7 +126,6 @@
     width: 110px;
     color: var(--background-elevated-base);
     font-weight: 700;
-    font-family: var(--spotify-fonte-jakarta);
     cursor: pointer;
     text-align: center;
     line-height: 45px;

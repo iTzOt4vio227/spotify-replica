@@ -5,6 +5,7 @@
     --background-highlight: #121212;
     --background-elevated-base: #1f1f1f;
     --background-elevated-highlight: #2a2a2a;
+    --background-elevated-dark: #121313;
     --spotify-destaque-verde: #1DB954;  
     --spotify-card-cinza: #282828;   
     --spotify-texto-branco: #FFFFFF;   
@@ -21,29 +22,35 @@ body {
     height: 100vh;
     background-color: var(--background-under);
     color: var(--spotify-texto-branco);
+    font-family: var(--spotify-fonte-jakarta);
     overflow: hidden;
     display: grid;
-    grid-template-columns: 360px 1fr;
-    grid-template-rows: 40px auto;
-    gap: 0.9rem 0.5rem;
+    grid-template-columns: 420px 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0.5rem 0.5rem;
     grid-template-areas: 
-    "head head head"
-    "aside main .";
+    "head head"
+    "aside main";
 }
 
 .menu {
     grid-area: head;
     background-color: var(--background-under);
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.conteudo__principal {
+.main {
     grid-area: main;
     background-color: var(--background-highlight);
     border-radius: 8px;
+    display: flex;
 }
 
 .sidebar {
     grid-area: aside;
     background-color: var(--background-highlight);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 }

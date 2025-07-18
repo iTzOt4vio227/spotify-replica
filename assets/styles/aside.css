@@ -1,0 +1,78 @@
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.sidebar-library {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 5%;
+    height: 4rem;
+    background-color: var(--background-elevated-dark);
+}
+
+.sidebar-title {
+    font-size: 1rem;
+}
+
+.sidebar-library-scroll {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 220px;
+    overflow-y: scroll;
+    scrollbar-color: var(--spotify-texto-cinza) transparent;
+}
+
+.fa-plus {
+    color: var(--spotify-texto-cinza);
+}
+
+.sidebar-card {
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--background-elevated-base);
+}
+
+.sidebar-card-title_container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.sidebar-card-title {
+    font-weight: 900;
+}
+
+.sidebar-card-text {
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.sidebar-card-button {
+    margin: 0.5rem 1rem;
+    background-color: #ffff;
+    border-radius: 2rem;
+    border: none;
+    color: var(--background-under);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    cursor: pointer; 
+}
+
+.sidebar-card-button_text {
+    font-size: 15px;
+}
+
+.sidebar-footer-list {
+    margin-top: 10%;
+}
+
+.sidebar-list-anchor {
+    font-size: 10px;
+    color: var(--spotify-texto-cinza);
+}
