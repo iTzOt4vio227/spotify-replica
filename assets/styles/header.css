@@ -1,9 +1,22 @@
 .main-nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
     width: 100%;
-    margin-top: 0.6rem;
+    position: relative;
+    margin-top: 0.5rem;
+}
+
+.center-nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .search-container {
@@ -14,14 +27,19 @@
     padding: 0 15px;
     height: 45px;
     width: 100%;
-    max-width: 550px;
+    max-width: 475px;
     background-color: var(--background-elevated-base);
-    border-radius: 90px;
+    border-radius: 25px;
     box-sizing: border-box;
+}
+
+.search-container:hover {
+    background-color: var(--background-elevated-highlight);
 }
 
 .nav-logo {
     margin-left: 1.2rem;
+    margin-right: auto
 }
 
 .nav-logo-link {
@@ -46,13 +64,15 @@
     cursor: pointer;
 }
 
-.home-icon:hover {
-    background-color: var(--background-elevated-highlight);
+.fa-house {
+    font-size: 22px;
+    color: var(--spotify-texto-cinza);
 }
 
-.home-icon i {
-    font-size: 22px;
-    color: white;
+.fa-house:hover,
+.home-icon:hover {
+    color: var(--spotify-texto-branco);
+    background-color: var(--background-elevated-highlight);
 }
 
 .fa-magnifying-glass {
@@ -61,15 +81,13 @@
 }
 
 .fa-folder-open {
-    color: var(--spotify-texto-cinza);
-    left: 465px;
+    color: var(--spotify-texto-branco);
     font-size: x-large;
 }
 
 .search-divider {
     background-color: var(--spotify-texto-cinza);
     height: 25px;
-    inset-inline-end: 50px;
     width: 1px;
 }
 
@@ -93,8 +111,8 @@
 .nav-links {
     display: flex;
     align-items: center;
-    margin-left: auto; 
     gap: 0.5rem;
+    margin-left: auto;
 }
 
 .nav-item {
