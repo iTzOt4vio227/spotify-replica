@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="stylesheet" href="assets/styles/aside.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
 </head>
 <body>
     <header class="menu">
@@ -47,7 +49,7 @@
     </main>
 
     <aside class="sidebar">
-        <nav>
+        <nav class="sidebar-nav">
             <div class="sidebar-container">
                 <div class="sidebar-library">
                     <h2 class="sidebar-title">Your Library</h2>
@@ -68,26 +70,45 @@
 
                     <section class="sidebar-card">
                         <div class="sidebar-card-title_container">
-                            <span class="sidebar-card-title">Create your first playlist</span>
-                            <span class="sidebar-card-text">It's easy, we'll help you</span>
+                            <span class="sidebar-card-title">Let's find some podcasts to follow</span>
+                            <span class="sidebar-card-text">We'll keep you updated on new episodes</span>
                         </div>
                         <div class="sidebar-card-button_container">
                             <button class="sidebar-card-button">
-                                <span class="sidebar-card-button_text">Create playlist</span>
+                                <span class="sidebar-card-button_text">Browse podcasts</span>
                             </button>
                         </div>
                     </section>
                 </div>
 
                 <div class="sidebar-footer">
-                    <ul class="sidebar-footer-list">
-                        <li class="sidebar-footer-item"><a href="#" class="sidebar-list-anchor">Legal</a></li>
-                    </ul>
+                    <div class="sidebar-footer-list">
+                        <a href="#" class="sidebar-anchor">Legal</a>
+                        <a href="#" class="sidebar-anchor">Safety & Privacy Center</a>
+                        <a href="#" class="sidebar-anchor">Privacy Policy</a>
+                        <a href="#" class="sidebar-anchor">Cookies</a>
+                        <a href="#" class="sidebar-anchor">About Ads</a>
+                        <a href="#" class="sidebar-anchor">Accessibility</a>
+                    </div>
+                    <div class="sidebar-footer-selector">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <button class="footer-button">English</button>
+                    </div>
                 </div>
             </div>
         </nav>
     </aside>
 
-    <footer></footer>
+    <footer class="footer">
+        <aside class="now-playing">
+            <div class="gradient-container">
+                <p class="now-playing-title">Preview Of Spotify</p>
+                <p class="now-playing-text">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+            </div>
+            <button class="now-playing-signup">
+                <span class="now-playing-signup-text">Sign up free</span>
+            </button>
+        </aside>
+    </footer>
 </body>
 </html>

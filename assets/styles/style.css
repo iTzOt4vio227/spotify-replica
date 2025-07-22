@@ -24,20 +24,23 @@ body {
     color: var(--spotify-texto-branco);
     font-family: var(--spotify-fonte-jakarta);
     overflow: hidden;
+    padding: 0.5rem;
+    gap: 0.5rem;
     display: grid;
     grid-template-columns: 420px 1fr;
-    grid-template-rows: auto 1fr;
-    gap: 0.5rem 0.5rem;
-    grid-template-areas: 
-    "head head"
-    "aside main";
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "menu menu"
+        "sidebar main"
+        "footer footer";
 }
 
 .menu {
-    grid-area: head;
+    grid-area: menu;
     background-color: var(--background-under);
     display: flex;
     flex-wrap: wrap;
+    margin-top: 0.5rem;
 }
 
 .main {
@@ -48,9 +51,17 @@ body {
 }
 
 .sidebar {
-    grid-area: aside;
+    grid-area: sidebar;
     background-color: var(--background-highlight);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--background-highlight);
+    display: flex;
+    padding: 12px;
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
 }

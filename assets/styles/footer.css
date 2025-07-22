@@ -1,0 +1,39 @@
+.now-playing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.gradient-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.now-playing-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.now-playing-text {
+    font-size: 15px;
+}
+
+.now-playing-signup {
+    border-radius: 32px;
+    height: 45px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+}
+
+.now-playing-signup:hover {
+    background-color: #e4e4e4;
+}
+
+.now-playing-signup-text {
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+}
