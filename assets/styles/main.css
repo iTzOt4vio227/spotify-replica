@@ -1,0 +1,31 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-tops {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 1.5rem 2.5rem;
+    gap: 1rem;
+}
+
+.browser-title {
+    color: var(--spotify-texto-branco);
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.trending-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+}
+
+.imagem-card {
+    height: 150px;
+    width: auto;
+    border-radius: 8px;
+}
