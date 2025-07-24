@@ -24,8 +24,28 @@
     gap: 0.5rem;
 }
 
+.trending-card-template {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 150px;
+    gap: 12px;
+}
+
 .imagem-card {
     height: 150px;
     width: auto;
     border-radius: 8px;
+}
+
+.card-title {
+    color: var(--spotify-texto-branco);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.card-author {
+    color: var(--spotify-texto-cinza);
+    font-weight: 500;
+    font-size: 14px;
 }
