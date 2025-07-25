@@ -3,12 +3,22 @@
     flex-direction: column;
 }
 
+.browser-gradient {
+    background-image: linear-gradient(in oklch, rgba(83, 83, 83, 0.226) 0,var(--background-elevated-dark));
+    background-repeat: no-repeat;
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    border-radius: 8px;
+}
+
 .trending-tops {
     display: flex;
     justify-content: start;
     flex-direction: column;
     padding: 1.5rem 2.5rem;
-    gap: 1rem;
+    gap: 24px;
+    z-index: 1;
 }
 
 .browser-title {
@@ -17,22 +27,41 @@
     font-size: 25px;
 }
 
+.browser-title:hover {
+    text-decoration: underline;
+}
+
 .trending-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr;
     gap: 0.5rem;
 }
 
-.trending-card-template {
+.trending-card {
     display: flex;
     align-items: flex-start;
+    align-content: flex-start;
     flex-wrap: wrap;
     max-width: 150px;
     gap: 12px;
+    cursor: pointer;
 }
 
-.imagem-card {
+.trending-card:hover {
+    background-color: #6e6e6e6e;
+    border-radius: 12px;
+}
+
+.card-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.image-card {
     height: 150px;
     width: auto;
     border-radius: 8px;
@@ -44,8 +73,16 @@
     font-size: 15px;
 }
 
+.card-title:hover {
+    text-decoration: underline;
+}
+
 .card-author {
     color: var(--spotify-texto-cinza);
     font-weight: 500;
     font-size: 14px;
+}
+
+.card-author:hover {
+    text-decoration: underline;
 }
