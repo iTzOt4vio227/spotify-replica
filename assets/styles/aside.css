@@ -43,13 +43,13 @@
     background-color: var(--background-elevated-base);
 }
 
-.sidebar-card-title_container {
+.sidebar-article-card-title_container {
     display: flex;
     flex-direction: column;
     margin: 1rem;
 }
 
-.sidebar-card-title {
+.sidebar-article-card-title {
     font-weight: 900;
 }
 
